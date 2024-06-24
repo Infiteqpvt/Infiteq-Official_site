@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infiteq </title>
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="contact.css">  
+    <!-- jequery and cdnjs links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+    
+
+    
+    <!-- Email sending Script -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "GcVAb99m8d1RhWtRZ",
+            });
+        })();
+    </script>
+
+ 
+
+
+
+
+</head>
+
+<body style="background-color: rgb(25, 25, 80);">
+    <div class="full">
+     <!-- Navbar -->
+     <nav id="navbar">
+        <div class="logo">
+            <img src="images/Infiteq.svg" alt="Infiteq">
+        </div>
+        <ul id="menuList">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+       
+
+         <!-- Animated NavBar -->
+
+         <div class="Animated-Nav" id="">
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="./services.html">Services</a>
+                  <a href="./projects.html">Projects</a>
+                  <a href="./blog.html">Blog</a>
+                  <a href="./about.html">About us</a>
+                  <a href="./contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+
+          <!-- Aniated Navbar End -->
+
+
+
+
+
+
+    </nav>
+    <!-- Navbar End -->
+     <!--contact-->
+
+        <div class="contact">
+            <div class="name">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-box">
+                
+                <!-- part1 -->
+                <div class="contact-parts">
+                    <div class="grid-container">
+                       
+                      <a href="tel:+919579181793" target="_blank">
+                        <div class="grid-item">
+                            <img src="./images/PHONE.svg" alt="phone">
+                            <h3>Phone Number</h3>
+                            <p>+91 95791 81793</p>
+                        </div>
+                      </a>
+                      
+                      
+                      <a href="mailto:infiteqservices@gmail.com" target="_blank">
+                        <div class="grid-item">
+                            <img src="./images/EMAIL.svg" alt="email">
+                            <h3>Email Address</h3>
+                            <p>infiteqservices@gmail.com</p>
+                        </div>
+                      </a>
+                      
+                      
+                      <a href="https://wa.me/919579181793?text=Hello%20!%20I%20want%20to%20know%20more%20about%20our%20class." target="_blank">
+                        <div class="grid-item">
+                            <img src="./images/APP.svg" alt="whatsapp">
+                            <h3>whatsapp</h3>
+                            <p>95791 81793</p>
+                        </div>
+                      </a>
+
+                      
+
+                        <div class="grid-item">
+                            <img src="./images/MAP.svg" alt="map">
+                            <h3>Our Office</h3>
+                            <p>Opening soon</p>
+                        </div>
+                    </div>
+                    <div class="map-image">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120976.50295729056!2d73.70957142274985!3d18.640839792989198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8377fbdeab3%3A0x2c4265dab1a7a0f8!2sPimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1718771023758!5m2!1sen!2sin" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- part 2 -->
+                <div class="contact-parts">
+                    <div class="contact-form-container">
+                      <div class="contact-form">
+                        <h2>Get In Touch</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Your Name.." id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+                        
+                        <label for="phone">phone No.:</label>
+                        <input type="number" placeholder="+91 9579 181793" id="phone" name="phone" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Type Here.." name="message" rows="5" required></textarea>
+                        
+                        <button type="submit" onclick="sendMail()">Send Now</button>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="endnote">
+            <div class="end-image">
+                <img src="./images/marketing.png" alt="image">
+                <h2>"Ready to Enhance Your<br> Business Technology?"</h2>
+            </div>
+        </div>
+
+
+    </div>
+    <!--contact end-->
+
+
+
+
+
+    <!--footer-->
+
+
+     
+    <footer class="footer">
+        <div class="container-footer">
+          <div class="row-footer">
+            <div class="footer-col">
+              
+                <div class="logo-img"><img src="images/Infiteq.svg" alt=""></div>
+                <div class="content-footer">
+                    <p>infiteq  It consultancy and services provides customized IT solutions, focusing on system
+                        integration, cloud services, and cybersecurity to enhance business efficiency and security.
+                    </p>
+                </div>
+
+            </div>
+            <div class="footer-col">
+              <h4>Navigation Bar</h4>
+              <ul>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="./services.html">Web-Devlopment</a></li>
+                <li><a href="./services.html">Management Systems</a></li>
+                <li><a href="./services.html">Startup Solutions</a></li>
+                <li><a href="./services.html">Android Development</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Social</h4>
+              <div class="social-links">
+                <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+                <a href="https://www.linkedin.com/company/infiteq-web-services/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/infiteq_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/infiteq_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">
+            <i class="fa-regular fa-copyright"></i> Copyright Infiteq 2024
+          </p>
+        </div>
+      </footer>
+
+
+
+    <!--footer end-->
+
+    <Script src="Script.js"></Script>
+
+   
+
+
+
+</body>
+
+</html>
